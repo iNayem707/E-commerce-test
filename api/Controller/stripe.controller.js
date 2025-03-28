@@ -43,8 +43,8 @@ const createCheckoutSession = async (req, res) => {
       payment_method_types: ['card'],
       line_items: line_items,
       mode: 'payment', // 'payment' for one-time payments
-      success_url: `http://localhost:5000/success`, // Success URL after payment
-      cancel_url: `http://localhost:5000/cancel`, // Cancel URL if payment is cancelled
+      success_url: `https://mts-e-commerce.netlify.app/success`, // Success URL after payment
+      cancel_url: `https://mts-e-commerce.netlify.app/cancel`, // Cancel URL if payment is cancelled
     });
 
     // Send back the session ID
